@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>VI.ZZI di Marketing</title>
+  <style>
+    :root{--accent:#E8C89E;--muted:#6b7280}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;margin:0;padding:0;overflow-x:hidden}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:#fff;color:#0b1220}
+    a{color:inherit;text-decoration:none}
+
+    /* Layout: full-page sections */
+    .page{min-height:100vh;padding:48px 6vw;position:relative;display:flex;flex-direction:column}
+
+    /* Top-right nav */
+    .nav{position:absolute;top:28px;right:36px;display:flex;gap:20px;font-weight:600}
+    .nav a{padding:8px 6px}
+
+    /* Centered hero text */
+    .hero-center{margin:auto;text-align:center}
+    .hero-center h1{font-size:clamp(32px,8vw,60px);line-height:1.05;margin-bottom:20px}
+    .hero-center p.lead{color:var(black);margin-bottom:80px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:10px;background:var(--accent);color:black;font-weight:700}
+
+    /* Logo bottom-left */
+    .logo-bl{position:absolute;left:12px;bottom:12px;width:60px}
+    .logo-bl img{width:100%;height:auto;display:block}
+
+    /* CHI SIAMO layout */
+    .chi-siamo{display:flex;flex-direction:column;gap:60px;padding-left:0;padding-right:0}
+    .chi-siamo h1{font-size:60px;background-color:#E8C89E;width:100vw;padding: 10px 0;padding-left: 50px;margin-left:-50px}
+    .chi-siamo p{font-size:25px;margin-top:11px}
+    .chi-siamo .txt{flex:1;max-width:650px}
+   <center>
+    .chi-siamo img{max-width:450px;width:100%;height:auto;border-radius:10px}
+  </center>
+    .chi-siamo .caption{margin-top:15px;text-align:center;font-weight:700}
+
+    /* SERVIZI layout */
+    .servizi{display:flex;flex-direction:column;gap:60px;align-items:center}
+    .servizi h1{font-size:60px;background-color:#8B8680; width:100vw;margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw);  padding: 10px 0;padding-left: 50px}
+    .servizi img{max-width:1200px;width:100%;height:auto;border-radius:10px;margin-top: 40px}
+    .servizi .cta-wrap{text-align:center;margin-top:100px}
+
+    /* PERCHE' NOI */
+    .perche{max-width:880px;margin:0 auto;padding:0 20px}
+    .perche h1{font-size:60px;background-color:#E8C89E;width:100vw;margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw);  padding: 10px 0 10px 50px}
+    .perche p{font-size:25px;margin-top:10px;padding-left:50px}
+    .perche .points{margin-top:12px;padding-left:18px}
+    .perche ul{list-style:none;padding-left:0;margin-top:50px}
+    .perche li{font-size:25px;margin-bottom:30px;position:relative;padding-left:50px}
+    .perche li::before {content:"\2022";font-size:4.5em;font-weight:bold;position:absolute;left:0;top:50%;transform:translateY(-50%)translateY(-10px);line-height:1}
+    .perche li:nth-child(odd)::before{color:#E8C89E}
+    .perche li:nth-child(even)::before{color:#8B8680}
+    .perche .conclude{font-size:25px;margin-top:100px;text-align:center}
+
+    /* CONTATTI */
+    .contatti{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:100vh}
+    .contatti h1{font-size:clamp(32px,8vw,60px);line-height:1.05;margin-bottom:20px;margin-top:0}
+    .contatti .btns{display:flex;gap:20px;justify-content:center;margin-top:16px}
+    .contatti .btn.secondary{background:transparent;color:var(--accent);border:2px solid var(--accent);padding:10px 14px;border-radius:10px}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .chi-siamo{flex-direction:column}
+      .nav{right:18px;gap:12px}
+      .logo-bl{left:18px;bottom:18px;width:90px}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation (visible on every page) -->
+  <nav class="nav" aria-label="Navigazione principale">
+    <a href="#home">Chi siamo</a>
+    <a href="#servizi">Servizi</a>
+    <a href="#perche">Perché noi</a>
+    <a href="#contatti">Contatti</a>
+  </nav>
+
+  <!-- Prima pagina: Hero / Home -->
+  <section id="home" class="page" style="background:#ffffff">
+    <!-- NAV BAR -->
+     <header style="display:flex;justify-content:flex-end;padding:20px;">
+    <nav class="nav" aria-label="Navigazione principale">
+      <a href="#chi-siamo">Chi siamo</a>
+      <a href="#servizi">Servizi</a>
+      <a href="#perche">Perché noi</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+  </header>
+
+    <div class="hero-center">
+      <h1>Scopri il tuo potenziale con <strong> <br> VI.ZZI di MARKETING!</strong></h1>
+      <p class="lead">Due menti creative con un vizio per la strategia</p>
+      <p><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdLgkfeSRCH5lRsaF6USI_TxkqQTrPzGfNh-_GziYG3wmidHg/viewform">Richiedi una consulenza gratuita</a></p>
+    </div>
+
+    <!-- logo bottom-left -->
+    <div class="logo-bl" aria-hidden="false">
+      <!-- sostituisci "logo.png" con il percorso reale dell'immagine -->
+      <img src="/Users/valentinapozzi/Desktop/PROGETTO/LOGO/logo senza sfondo.png" alt="Logo VI.ZZI">
+    </div>
+  </section>
+
+  <!-- Seconda pagina: CHI SIAMO -->
+  <section id="chi-siamo" class="page" style="background:#ffffff">
+    <div class="chi-siamo">
+      <div class="txt">
+        <h1>Chi siamo</h1> <br>
+        <p>Siamo una <strong>copywriter</strong> e una <strong>social media manager.</strong></p>
+      </div>
+
+      <div class="img-wrap">
+        <!-- sostituisci "chi-siamo.jpg" con il percorso reale -->
+        <img src="" alt="Le fondatrici di VI.ZZI">
+        <div class="caption"><strong>Da lì è nato VI.ZZI.</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Terza pagina: SERVIZI (parte 1) -->
+  <section id="servizi" class="page" style="background:#ffffff">
+    <div class="servizi">
+      <h1>Servizi</h1>
+      <!-- prima immagine servizi -->
+      <img src="/Users/valentinapozzi/Desktop/Servizi1.png" alt="Servizi VI.ZZI — immagine 1">
+    </div>
+  </section>
+
+  <!-- Terza pagina: SERVIZI (parte 2) - continua -->
+  <section id="servizi-2" class="page" style="background:#ffffff">
+    <div class="servizi">
+      <!-- seconda immagine servizi -->
+      <img src="/Users/valentinapozzi/Desktop/Servizi2.png" alt="Servizi VI.ZZI — immagine 2">
+
+      <div class="cta-wrap">
+        <a class="btn" href="mailto:vizzidimarketing@gmail.com?subject=Richiesta%20Preventivo">Richiedi un preventivo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quarta pagina: PERCHE' NOI -->
+  <section id="perche" class="page" style="background:#ffffff">
+    <div class="perche">
+      <h1>Perché noi</h1><br>
+      <p>Semplicità, chiarezza ed efficacia sono alla base di ogni progetto.<br><br> I nostri <strong>punti di forza...</strong></p>
+
+      <div class="points">
+        <ul>
+          <li>Creatività: per dare forma a idee originali e memorabili</li>
+          <li>Strategia mirata: perché ogni brand ha un obiettivo unico</li>
+          <li>Affidabilità: il nostro impegno costante in ogni fase del lavoro</li>
+          <li>Visione digitale: per trasformare la presenza online in valore reale</li>
+        </ul>
+      </div>
+      <br>
+      <div class="conclude"><strong>...conducono ogni nostro lavoro</strong></div>
+    </div>
+  </section>
+
+  <!-- Quinta pagina: CONTATTI -->
+  <section id="contatti" class="page" style="background:#ffffff">
+    <div class="contatti">
+      <h1>Pronto a far crescere <br> il tuo business?</h1> <br>
+      <div class="btns" style="display:flex;flex-direction:column;gap:12px;align-items:center;"> 
+        <a class="btn" href="mailto:vizzidimarketing@gmail.com?subject=Richiesta%20Informazioni">Contattaci via mail</a>
+        <br>
+        <a class="btn secondary" href="https://www.instagram.com/vizzidimarketing?utm_source=ig_web_button_share_sheet&igsh=OWo0cDltMzc5dTVv" target="_blank" rel="noopener">Seguici su IG</a>
+      </div>
+    </div>
+
+    <!-- logo bottom-left -->
+    <div class="logo-bl">
+      <img src="/Users/valentinapozzi/Desktop/PROGETTO/LOGO/logo senza sfondo.png" alt="Logo VI.ZZI">
+    </div>
+  </section>
+
+</body>
+</html>
